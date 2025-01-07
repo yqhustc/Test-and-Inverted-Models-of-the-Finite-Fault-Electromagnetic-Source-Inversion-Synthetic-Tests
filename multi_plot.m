@@ -6,12 +6,12 @@ da1=load("multi_test_mod_f1.txt");
 A1=da1(:,1);
 t1=da1(:,2);
 d1=da1(:,3);
-% t1(A1==0)=0;
+t1(A1==0)=0;
 da1=load("multi_inv_mod_f1.txt");
 A_init1=da1(:,1);
 t_init1=da1(:,2);
 d_init1=da1(:,3);
-% t_init1(A_init1<0.1)=0;
+t_init1(A_init1<0.1)=0;
 
 x_num2=14;y_num2=6;
 src_num2=x_num2*y_num2;
@@ -19,12 +19,12 @@ da2=load("multi_test_mod_f2.txt");
 A2=da2(:,1);
 t2=da2(:,2);
 d2=da2(:,3);
-% t2(A2==0)=0;
+t2(A2==0)=0;
 da2=load("multi_inv_mod_f2.txt");
 A_init2=da2(:,1);
 t_init2=da2(:,2);
 d_init2=da2(:,3);
-% t_init2(A_init2<0.1)=0;
+t_init2(A_init2<0.1)=0;
 
 
 fs=13;
